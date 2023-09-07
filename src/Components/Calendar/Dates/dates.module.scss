@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .calendar {
+    max-width: 380px;
+  
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: 1 ft repeat(6, 40px);
+   
+    margin-top: 5px;
+    padding: 0 5px 5px 5px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 1px rgba(16, 16, 169, 0.367);
+  }
+  
+  .date {
+    
+    display: flex;
+    background: rgb(255, 255, 253);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(250, 149, 7, 0.267);
+  }
+  
+  .date:hover {
+    background-color: blue;
+    cursor: pointer;
+  }
+  
+  .date:active {
+      background-color: rgba(16, 16, 169, 0.367);
+    }
+  
+    .today {
+      display: flex;
+    background: blue;
+    align-items: center;
+    justify-content: center;
+    }

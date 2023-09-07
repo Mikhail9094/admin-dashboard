@@ -1,15 +1,26 @@
-import React from "react";
-import styles from "./mainWrapper.module.scss";
+import React, { FC, ReactNode } from "react";
+import styles from "./mainLayout.module.scss";
 
-const MainWrapper = () => {
+interface Props {
+  children: ReactNode;
+}
+
+const MainLayout = ({children}:Props) => {
   return (
     <div className={styles.wrapper}>
-      <div>Header</div>
-      <div>Nav</div>
-      <div>body</div>
-      <div>footer</div>
+      <header>Header</header>
+      <nav>
+        <div className={styles.logo}>
+          <span className={styles.dash}>Dash</span>
+          <span>Lite</span>
+        </div>
+
+        <div>Dashboard</div>
+      </nav>
+      <main>{children}</main>
+      <footer>footer</footer>
     </div>
   );
 };
 
-export default MainWrapper
+export default MainLayout;
