@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin backgroundImg($img) {
+  background-image: url($img);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(238, 246, 246, 0);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.account {
+  @include backgroundImg("../img/imgHeader/account.svg");
+}
+
+.bell {
+  @include backgroundImg("../img/imgHeader/bell.svg");
+}
+
+.search {
+  @include backgroundImg("../img/imgHeader/search.svg");
+}
+
+.message {
+  @include backgroundImg("../img/imgHeader/message.svg");
+}

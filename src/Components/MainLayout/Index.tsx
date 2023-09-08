@@ -1,24 +1,38 @@
-import React, { FC, ReactNode } from "react";
 import styles from "./mainLayout.module.scss";
+import ButtonIcon from "../ButtonIcon";
+import ButtonDashboard from "../ButtonDashboard";
+import { Outlet } from "react-router-dom";
+import Calendar from "../Calendar/Calendar";
 
-interface Props {
-  children: ReactNode;
-}
-
-const MainLayout = ({children}:Props) => {
+const MainLayout = () => {
   return (
     <div className={styles.wrapper}>
-      <header>Header</header>
+      <header>
+        <div className={styles.icons}>
+          <ButtonIcon addClass="account" onClick={() => console.log("account")} />
+          <ButtonIcon addClass="bell" onClick={() => console.log("bell")} />
+          <ButtonIcon addClass="search" onClick={() => console.log("search")} />
+          <ButtonIcon addClass="message" onClick={() => console.log("message")} />
+        </div>
+      </header>
+
+      <main>
+        <div className={styles.calendar}>
+          <Calendar />
+        </div>
+        <Outlet />
+      </main>
       <nav>
         <div className={styles.logo}>
           <span className={styles.dash}>Dash</span>
-          <span>Lite</span>
+          <span className={styles.lite}>Lite</span>
         </div>
 
-        <div>Dashboard</div>
+        <div className={styles.dashboard}>
+          <ButtonDashboard nameButton="Account" to="/table" />
+        </div>
       </nav>
-      <main>{children}</main>
-      <footer>footer</footer>
+      <footer>2023</footer>
     </div>
   );
 };
