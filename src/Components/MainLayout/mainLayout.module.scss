@@ -1,6 +1,7 @@
 @import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
 @import "../sass/variables.scss";
 
+
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +22,20 @@
   font-style: normal;
   font-weight: 400;
 
+
   header {
     grid-area: header;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    padding: 2px 10px;
+    background: $colorHeaderAndFooter;
+
+    .icons {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 5px;
+    }
     display: grid;
     justify-content: end;
     align-items: center;
@@ -55,11 +68,16 @@
     color: $colorTextDashBoard;
     display: flex;
     flex-direction: column;
+    background: $colorNav;
+    color: $colorTextDashBoard;
+    display: flex;
+    flex-direction: column;
 
     .logo {
       display: flex;
       align-items: center;
       justify-content: center;
+
 
       letter-spacing: 2px;
       border-bottom: 1px solid #494a4b;
@@ -73,7 +91,18 @@
 
       .lite {
         color: $colorLite;
+        color: $colorDash;
       }
+
+      .lite {
+        color: $colorLite;
+      }
+    }
+
+    .dashboard{
+      display: flex;
+      justify-content: center;
+      padding: 5px;
     }
 
     .dashboard{
