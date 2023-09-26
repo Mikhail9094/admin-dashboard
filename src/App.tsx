@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./app.module.scss";
 import Authorization from "./Components/Authorization";
-import ReferencesComponents from "./Components/ReferencesComponents/ReferencesComponents";
+import ReferencesComponents from "./Components/ReferencesComponents/ReferencesComponents.1";
 
 function App() {
   const [authorization, setAuthorization] = useState(true);

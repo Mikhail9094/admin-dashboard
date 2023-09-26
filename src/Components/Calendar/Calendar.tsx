@@ -14,7 +14,7 @@ export default function Calendar() {
         value={data}
         onChange={(newData) => setData(newData)}
         views={["year", "month", "day"]}
-        sx={{ width: 200, maxHeight: 100 }}
+        sx={{ width: 210, maxHeight: 100 }}
       />
     </LocalizationProvider>
   );
