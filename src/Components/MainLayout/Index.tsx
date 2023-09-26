@@ -2,9 +2,7 @@ import ButtonIcon from "../ButtonIcon";
 import ButtonDashboard from "../ButtonDashboard";
 import { Outlet } from "react-router-dom";
 import Calendar from "../Calendar/Calendar";
-import styles from './mainLayout.module.scss'
-
-
+import styles from "./mainLayout.module.scss";
 
 const MainLayout = () => {
   return (
@@ -30,17 +28,14 @@ const MainLayout = () => {
           <span>Lite</span>
           <span className={styles.lite}>Lite</span>
         </div>
-
-        <div>Dashboard</div>
         <div className={styles.dashboard}>
           <ButtonDashboard nameButton="Account" to="/table" />
         </div>
       </nav>
-   
-    
+
       <footer>2023</footer>
     </div>
   );
 };
 
-export default MainLayout
+export default MainLayout;
