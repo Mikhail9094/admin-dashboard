@@ -7,7 +7,7 @@ import ReferencesComponents from "./Components/ReferencesComponents/ReferencesCo
 import ReferencesComponents from "./Components/ReferencesComponents/ReferencesComponents";
 >>>>>>> 0665629 (fix: code correction)
 
-function App() {
+function App(): React.JSX.Element {
   const [authorization, setAuthorization] = useState(true);
 
   return !authorization ? (
