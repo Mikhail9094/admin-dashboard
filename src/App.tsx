@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "./app.module.scss";
 import Authorization from "./Components/Authorization";
-import ReferencesComponents from "./Components/ReferencesComponents/ReferencesComponents.1";
+import ReferencesComponents from "./Components/ReferencesComponents/ReferencesComponents";
+
 
 function App(): React.JSX.Element {
   const [authorization, setAuthorization] = useState(true);
