@@ -1,9 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-
 import ItemsPage from "../Table/pages/ItemsPage";
-import { useState } from "react";
-import Authorization from "../Authorization";
-import styles from './styles.module.scss'
+import MainLayout from "../MainLayout";
 
 const ReferencesComponents = () => {
 
