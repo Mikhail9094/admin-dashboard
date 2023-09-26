@@ -1,0 +1,122 @@
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
+@import "../sass/variables.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "nav header header"
+    "nav main main"
+    "nav footer footer";
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 150px 1fr;
+  height: 100vh;
+  margin: 0;
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+
+
+  header {
+    grid-area: header;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    padding: 2px 10px;
+    background: $colorHeaderAndFooter;
+
+    .icons {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 5px;
+    }
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    padding: 2px 10px;
+    background: $colorHeaderAndFooter;
+
+    .icons {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 5px;
+    }
+  }
+
+  main {
+    position: relative;
+    grid-area: main;
+    background: $colorMainElement;
+
+    .calendar {
+      text-align: right;
+      padding-right: 10px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  nav {
+    grid-area: nav;
+    background: $colorNav;
+    color: $colorTextDashBoard;
+    display: flex;
+    flex-direction: column;
+    background: $colorNav;
+    color: $colorTextDashBoard;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      letter-spacing: 2px;
+      border-bottom: 1px solid #494a4b;
+      height: 49px;
+      margin-bottom: 10px;
+
+      .dash {
+        font-weight: 700;
+        color: $colorDash;
+      }
+
+      .lite {
+        color: $colorLite;
+        color: $colorDash;
+      }
+
+      .lite {
+        color: $colorLite;
+      }
+    }
+
+    .dashboard{
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+    }
+
+    .dashboard{
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+    }
+  }
+
+  footer {
+    grid-area: footer;
+    background: $colorHeaderAndFooter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

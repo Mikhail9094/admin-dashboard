@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(250px + (550 - 250) * ((100vw - 500px) / (1920 - 500)));
+  height: calc(250px + (500 - 250) * ((100vw - 500px) / (1920 - 500)));
+  background-color: rgb(128, 198, 190);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgb(128, 198, 190);
+
+  span {
+    font-size: 23px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  .itemAuthorization {
+    input {
+      border: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: #f2f2f2;
+      padding: 10px;
+      border-radius: 3px;
+      width: 200px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+
+  button {
+    border: none;
+    border-radius: 3px;
+    padding: 3px 15px;
+    cursor: pointer;
+  }
+}
